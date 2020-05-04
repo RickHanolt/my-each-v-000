@@ -39,3 +39,12 @@ and return:
 
 Just like the real `#each` method.
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/my-each' title='My Each'>My Each</a> on Learn.co and start learning to code for free.</p>
+
+def my_each(array)
+  i = 0
+  while i < array.length
+    yield array[i]
+    i += 1
+  end
+  array
+end
